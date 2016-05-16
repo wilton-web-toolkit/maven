@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.wiltonwebtoolkit</groupId>
-    <artifactId>wilton-jni</artifactId>
-    <version>0.1</version>
+    <artifactId>wilton.js</artifactId>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
     <name>Wilton Web Toolkit JNI library</name>
 
@@ -17,7 +17,7 @@
         <url>https://github.com/wilton-web-toolkit/wilton-jni</url>
         <connection>scm:git:https://github.com/wilton-web-toolkit/wilton-jni.git</connection>
         <developerConnection>scm:git:https://github.com/wilton-web-toolkit/wilton-jni.git</developerConnection>
-        <tag>0.1</tag>
+        <tag>0.2.0</tag>
     </scm>
 
     <dependencies>
@@ -26,6 +26,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mozilla</groupId>
+            <artifactId>rhino</artifactId>
+            <version>1.7.7.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -38,6 +44,24 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.2.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.guava</groupId>
+        	<artifactId>guava</artifactId>
+        	<version>10.0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
